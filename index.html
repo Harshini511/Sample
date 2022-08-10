@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Regisration Form </title> 
+</head>
+<body>
+    <div class="container">
+        <header>Buy/Sell</header>
+
+        <form>
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Select Entity name</label>
+                            <select required id="entity">
+                                <option disabled>Select</option>
+                                <option value="adaniports">ADANIPORTS</option>
+                                <option value="bajajauto">BAJAJ-AUTO</option>
+                                <option value="citi">CITI</option>
+                                <option value="divislab">DIVISLAB</option>
+                                <option value="eicher">EICHERMOT</option>
+                                <option value="grasim">GRASIM</option>
+                                <option value="hdfc">HDFC</option>
+                                <option value="lt">LT</option>
+                                <option value="tvs">TVS</option>
+                                <option value="maruti">MARUTI</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date</label>
+                            <input type="date" id="date" placeholder="Date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Time</label>
+                            <input type="text" id="time" placeholder="hh:mm" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Quantity</label>
+                            <input type="number" placeholder="Enter quantity" id="quantity" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Price</label>
+                            <input type="number" placeholder="Enter price" id="price" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Buy/Sell</label>
+                            <select required id="bs">
+                                <option value="buy">Buy</option>
+                                <option value="sell">Sell</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            
+                    <button class="nextBtn" onclick="update()">
+                        <span class="btnText">Next</span>
+                    </button>
+            </div>
+
+
+
+            
+
+    <script src="script.js"></script>
+</body>
+</html>
